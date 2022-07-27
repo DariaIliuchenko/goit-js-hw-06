@@ -13,7 +13,7 @@ boxes.innerHTML = ""
 function createBoxes(amount) { 
   let array = [];
   destroyEl()
-  
+
   for (let i = 0; i < amount; i += 1) { 
     if (amount > Number(number.max)) { 
       return alert (`Введено значення ${amount} більше значення $ {Number(number.max)} `)
@@ -27,4 +27,4 @@ function createBoxes(amount) {
   boxes.append(...array);
 }
 create.addEventListener("click", () => createBoxes(Number(number.value)));
-destroy.addEventListener("click".destroyEl);
+destroy.addEventListener("click", destroyEl);
