@@ -16,7 +16,10 @@ const images = [
 
 const gallery = document.querySelector(".gallery");
 gallery.style.display = "flex";
+gallery.style.alignItems = "center";
+gallery.style.justifyContent = "space-between";
 gallery.style.listStyle = "none";
+
 const picture = images.map((image) => {
   return `<li><img src="${image.url}" alt="${image.alt}" width="500"></li>`;
 });
